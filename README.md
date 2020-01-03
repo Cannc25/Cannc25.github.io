@@ -1,3 +1,3 @@
 # Cannc25.github.io
-project pond website
-pond plants, fish, and FAQ
+Project Pond Website
+It's about pond plants, fish, and FAQ.
