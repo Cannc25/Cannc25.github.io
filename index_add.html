@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A journey to the Pond</title>
+<link rel="stylesheet" href="index_add.css" type="text/css">
+  </head>
+  <body>
+
+<div class="container">
+  <img src="pondidea2.jpg" alt="pond view" title="Pond View" style="width:100%;">
+  <div class="bottom-left">A journey to the Pond</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div>
+  <div class="centered">    <h1 class="title6">A journey to the pond</h1></div>
+</div>
+
+    <h1 class="title5">A journey to the pond</h1>
+    <p class="author">by Ann Chang</p>
+    <p class="intro">A garden pond adds beauty, elegance, and lively interest to a yard. Whether a fish pond, a receiving basin for a waterfall, or simply a placid body of water for meditation and reflection, a garden pond provides a focal point that enhances nearly all yards. But to successfully create a garden pond that looks natural, it helps to follow a few basic guidelines to make the building go smoother, and for easier continued maintenance of the pond.(3)
+
+</p>
+<!--slideshow-->
+<h3 class="title5">Pond Ideas</h3>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="pondview_b12.jpg" style="width:100%" alt="Pond Idea" title="Pond Idea" style="width:100%">
+  <div class="text">Pond Idea 1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="pondview_b21.jpg" style="width:100%">
+  <div class="text">Pond Idea 2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="pondview_b16.jpeg" style="width:100%">
+  <div class="text">Pond Idea 3</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="pondview_b17.jpeg" style="width:100%">
+  <div class="text">Pond Idea 4
+</div>
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<br> <!--slideshow-->
+
+
+<!--Add Javascript: without it, only can see dots and numbertext-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
+<!--end of slideshow javascript-->
+
+
+<h3 class="title5">Reference:</h3>
+<p >
+<ol  >
+  <li><a href="https://www.aquascapeinc.com/water-gardening/plants/the-basics-of-aquatic-plants" target="_blank">The Basics of Aquatic Plants.</a>
+</li>
+  <li><a href="https://www.velda.com/pond-fish/types/" target="_blank">Pond Fish.</a>
+  </li>
+  <li><a href="https://www.thespruce.com/best-garden-pond-building-practices-1821229" target="_blank">10 Garden Pond Building Tips.</a>
+  </li>
+</ol>
+</p>
+<!--footer-->
+
+<div class="buttonContainer">
+  <p><button class="button"><a href="#">Top</a></button></p>
+</div>
+
+<!--navitaion bar: top menu-->
+    <div class="nav_div">
+        <a href="plant.html" target="_blank">Plants</a>
+        <a href="fish.html" target="_blank">Fish</a>
+        <a href="FAQ.html" target="_blank">FAQ</a>
+      </div>
+
+
+  </body>
+</html>
